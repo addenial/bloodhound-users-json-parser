@@ -5,8 +5,16 @@ import sys
 #reload(sys)
 #sys.setdefaultencoding('utf8')
 
+
+
+# note:
+#wget https://raw.githubusercontent.com/addenial/bloodhound-users-json-parser/main/bloodhound-users-json-parser.py
+#python3 ./bloodhound-users-json-parser.py 202222_users.json | grep True | cut -d@ -f1 > users.log
+
+
 #import json
 import simplejson
+
 
 if len(sys.argv) == 1:
     print ("Usage: " + sys.argv[0] + " bloodhound_users.json")
